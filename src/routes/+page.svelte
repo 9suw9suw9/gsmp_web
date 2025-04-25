@@ -27,9 +27,11 @@
       <li>• És egy közösség, ahol még senki se kapott bann-t a rossz poénjai miatt. Még.</li>
     </ul>
 
+    <h2></h2>
+
     <p>👉 Csinálj magadnak egy házat. Vagy egy sárkunyhót. Vagy csak gyere fel, és mondd azt a chatbe, hogy “ez a szerver jobb mint a múltkori”. Mert tényleg az.</p>
 
-    <h3>❗Csatlakozz most:</h3>
+    <h3>Csatlakozz most:</h3>
     <p><a class="button" href="https://dc.goldsmp.xyz" target="_blank">Discord</a> | <strong>IP:</strong> play.goldsmp.xyz</p>
   </div>
 </main>
@@ -149,10 +151,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(90vh - 200px);
+    min-height: calc(80vh - 200px);
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
 </style>
