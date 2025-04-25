@@ -20,7 +20,7 @@
         href="/"
         class="inline-block px-6 py-3 text-white rounded-lg shadow transition-transform transform hover:scale-105"
         style="
-            background: linear-gradient(45deg, #ffd700, #ffcc00);
+            background: linear-gradient(45deg, #ffcc00, #d4af37); /* More contrasting gold tones */
             border: none;
             color: black;
             font-weight: bold;
