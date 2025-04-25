@@ -8,6 +8,10 @@
   </nav>
 </header>
 
+<footer>
+  <p>&copy; 2025 GoldSMP - Made by feketefh & 9suw9suw9</p>
+</footer>
+
 <style>
   :global(body) {
     background-color: black;
@@ -20,7 +24,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Transp bg */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
     padding: 10px 20px;
     z-index: 1000;
   }
@@ -30,7 +34,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* horiz center */
+    justify-content: center; /* Center the content horizontally */
   }
 
   .navbar li {
@@ -45,5 +49,16 @@
 
   .navbar a:hover {
     text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8); /* valami */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
   }
 </style>
