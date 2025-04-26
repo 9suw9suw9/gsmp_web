@@ -14,25 +14,26 @@
     <p>Itt vannak azok, akik néha dolgoznak is valamit 😎</p>
   
     <div class="staff-grid">
-      <div class="staff-card">
-        <img src="/skins/9suw9suw9.png" alt="9suw9suw9" class="staff-skin">
-        <p class="staff-name">9suw9suw9</p>
-        <p class="staff-role">a</p>
+        <div class="staff-card">
+          <img src="/skins/9suw9suw9.png" alt="9suw9suw9" class="staff-skin">
+          <p class="staff-name">9suw9suw9</p>
+          <p class="staff-role" style="color: #FF0000;">Tulajdonos</p> <!-- Added role with color -->
+        </div>
+        <div class="staff-card">
+          <img src="/skins/ruminiz5.png" alt="Ruminiz5" class="staff-skin">
+          <p class="staff-name">Ruminiz5</p>
+          <p class="staff-role" style="color: #FF0000;">Tulajdonos</p> <!-- Added role with color -->
+        </div>
+        <div class="staff-card">
+          <img src="/skins/feketefh.png" alt="feketefh" class="staff-skin">
+          <p class="staff-name">feketefh</p>
+          <p class="staff-role" style="color: #71368A;">Manager</p> <!-- Added role with color -->
+        </div>
       </div>
-      <div class="staff-card">
-        <img src="/skins/ruminiz5.png" alt="Ruminiz5" class="staff-skin">
-        <p class="staff-name">Ruminiz5</p>
-        <p class="staff-role">a</p>
-      </div>
-      <div class="staff-card">
-        <img src="/skins/feketefh.png" alt="feketefh" class="staff-skin">
-        <p class="staff-name">feketefh</p>
-        <p class="staff-role">a</p>
-      </div>
-    </div>
-  </main>
-  
-  
+  </main>    
+  <footer>
+    <p>&copy; 2025 GoldSMP - Made by feketefh & 9suw9suw9</p>
+  </footer>
 
   <style>
     :global(body) {
@@ -108,6 +109,10 @@
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content inside the card */
 }
 
 .staff-card:hover {
@@ -115,9 +120,9 @@
 }
 
 .staff-skin {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 276px;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -129,11 +134,20 @@
 }
 
 .staff-role {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin-top: 5px;
-  font-style: italic;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;  /* Space between name and role */
 }
 
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+  }
   </style>
    
