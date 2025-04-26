@@ -1,4 +1,4 @@
-<title>GoldSMP - Kezdőlap</title>
+<title>GoldSMP</title>
 
 <script>
   // Example data for the server status (replace with actual API call if available)

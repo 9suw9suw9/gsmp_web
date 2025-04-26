@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>{status} GoldSMP - Hiba</title>
+    <title>{status} GoldSMP</title>
 </svelte:head>
 
 <div class="min-h-screen flex flex-col items-center justify-center" style="background-color: #2e2e2e; color: white; padding: 20px; text-align: center;">
