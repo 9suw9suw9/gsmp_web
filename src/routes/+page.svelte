@@ -33,6 +33,7 @@
   <nav class="navbar">
     <ul>
       <li><a href="/">Kezdőlap</a></li>
+      <li><a href="/staff-team">Staff csapat</a></li>
     </ul>
   </nav>
 </header>
