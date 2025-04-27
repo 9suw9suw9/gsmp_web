@@ -17,17 +17,17 @@
         <div class="staff-card">
           <img src="/skins/9suw9suw9.png" alt="9suw9suw9" class="staff-skin">
           <p class="staff-name">9suw9suw9</p>
-          <p class="staff-role" style="color: #FF0000;">Tulajdonos</p> <!-- Added role with color -->
+          <p class="staff-role" style="color: #FF0000;">Tulajdonos</p> 
         </div>
         <div class="staff-card">
           <img src="/skins/ruminiz5.png" alt="Ruminiz5" class="staff-skin">
           <p class="staff-name">Ruminiz5</p>
-          <p class="staff-role" style="color: #FF0000;">Tulajdonos</p> <!-- Added role with color -->
+          <p class="staff-role" style="color: #FF0000;">Tulajdonos</p> 
         </div>
         <div class="staff-card">
           <img src="/skins/feketefh.png" alt="feketefh" class="staff-skin">
           <p class="staff-name">feketefh</p>
-          <p class="staff-role" style="color: #71368A;">Manager</p> <!-- Added role with color -->
+          <p class="staff-role" style="color: #71368A;">Manager</p> 
         </div>
       </div>
   </main>    
@@ -78,9 +78,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px; /* more top padding */
+  padding-top: 120px; 
   padding-bottom: 40px;
-  min-height: auto; /* no full screen centering */
+  min-height: auto; 
   box-sizing: border-box;
 }
 
@@ -112,7 +112,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center content inside the card */
+  align-items: center; 
 }
 
 .staff-card:hover {
@@ -136,7 +136,7 @@
 .staff-role {
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 10px;  /* Space between name and role */
+  margin-top: 10px;  
 }
 
 footer {
