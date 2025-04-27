@@ -32,7 +32,7 @@
       </div>
   </main>    
   <footer>
-    <p>&copy; 2025 GoldSMP - Made by 9suw9suw9</p>
+    <p>&copy; 2025 GoldSMP - Made by feketefh & 9suw9suw9</p>
   </footer>
 
   <style>
