@@ -1,7 +1,6 @@
 <title>GoldSMP</title>
 
 <script>
-  // Example data for the server status (replace with actual API call if available)
   let serverStatus = {
     name: "GoldSMP",
     ip: "play.goldsmp.xyz",
@@ -9,7 +8,6 @@
     maxPlayers: 0
   };
 
-  // Fetch server status dynamically
   async function fetchServerStatus() {
     try {
       const response = await fetch("https://api.mcsrvstat.us/2/play.goldsmp.xyz");
@@ -25,7 +23,6 @@
     }
   }
 
-  // Fetch the server status on component load
   fetchServerStatus();
 </script>
 
@@ -38,46 +35,52 @@
   </nav>
 </header>
 
-<!-- GoldSMP Title -->
 <h1 class="title">GoldSMP</h1>
 
-<div class="server-status-widget">
-  <h3>Státusz</h3>
-  <p><strong>MOTD:</strong> {serverStatus.name}</p>
-  <p><strong>IP:</strong> play.goldsmp.xyz</p>
-  <p><strong>Játékosok:</strong> {serverStatus.players} / {serverStatus.maxPlayers}</p>
-</div>
-
 <div class="content-wrapper">
-  <main class="centered-container">
-    <!-- Server Description Section -->
-    <div class="server-description">
-      <p class="intro">😀 Szeretnél egy Minecraft szervert, ami nem egy újabb “survival de van /kit start” élmény? Hát... mi is. Ezért csináltuk meg a GoldSMP-t.</p>
-      <p>Itt nem csak blokkokat ásol, hanem barátságokat is. Meg néha gödröt a spawn közepére – de az adminok már megszokták.</p>
-      <h2>Mi vár rád nálunk❓</h2>
-      <ul>
-        <li> Egyedi élmények (vagy legalábbis mi annak hívjuk)</li>
-        <li> Egy staff csapat, akik több kávét isznak mint te XP-t farmolsz</li>
-        <li> Eventek, amik néha működnek is!</li>
-        <li> És egy közösség, ahol még senki se kapott bann-t a rossz poénjai miatt. Még.</li>
-      </ul>
-      <p>👉 Csinálj magadnak egy házat. Vagy egy sárkunyhót. Vagy csak gyere fel, és mondd azt a chatbe, hogy “ez a szerver jobb mint a múltkori”. Mert tényleg az.</p>
-      <h3>Csatlakozz most:</h3>
-      <p><a class="button" href="https://dc.goldsmp.xyz" target="_blank">Discord</a> | <strong>IP:</strong> play.goldsmp.xyz</p>
-    </div>
-  </main>
+  <main class="layout">
 
-  <!-- svelte-ignore a11y_missing_attribute -->
-  <iframe
-    src="https://discord.com/widget?id=1325013343463018548&theme=dark"
-    allowtransparency="true"
-    frameborder="0"
-    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-  ></iframe>
+    <!-- Left: Minecraft server status -->
+    <div class="server-status-widget">
+      <h3>Státusz</h3>
+      <p><strong>MOTD:</strong> {serverStatus.name}</p>
+      <p><strong>IP:</strong> play.goldsmp.xyz</p>
+      <p><strong>Verzió:</strong> 1.20.2</p>
+      <p><strong>Játékosok:</strong> {serverStatus.players} / {serverStatus.maxPlayers}</p>
+    </div>
+
+    <!-- Center: Main content -->
+    <div class="centered-container">
+      <div class="server-description">
+        <p class="intro">😀 Szeretnél egy Minecraft szervert, ami nem egy újabb “survival de van /kit start” élmény? Hát... mi is. Ezért csináltuk meg a GoldSMP-t.</p>
+        <p>Itt nem csak blokkokat ásol, hanem barátságokat is. Meg néha gödröt a spawn közepére – de az adminok már megszokták.</p>
+        <h2>Mi vár rád nálunk❓</h2>
+        <ul>
+          <li> Egyedi élmények (vagy legalábbis mi annak hívjuk)</li>
+          <li> Egy staff csapat, akik több kávét isznak mint te XP-t farmolsz</li>
+          <li> Eventek, amik néha működnek is!</li>
+          <li> És egy közösség, ahol még senki se kapott bann-t a rossz poénjai miatt. Még.</li>
+        </ul>
+        <p>👉 Csinálj magadnak egy házat. Vagy egy sárkunyhót. Vagy csak gyere fel, és mondd azt a chatbe, hogy “ez a szerver jobb mint a múltkori”. Mert tényleg az.</p>
+        <h3>Csatlakozz most:</h3>
+        <p><a class="button" href="https://dc.goldsmp.xyz" target="_blank">Discord</a> | <strong>IP:</strong> play.goldsmp.xyz</p>
+      </div>
+    </div>
+
+    <!-- Right: Discord widget -->
+    <!-- svelte-ignore a11y_missing_attribute -->
+    <iframe
+      src="https://discord.com/widget?id=1325013343463018548&theme=dark"
+      allowtransparency="true"
+      frameborder="0"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+    ></iframe>
+
+  </main>
 </div>
 
 <footer>
-  <p>&copy; 2025 GoldSMP - Made by feketefh & 9suw9suw9</p>
+  <p>&copy; 2025 GoldSMP - Made by 9suw9suw9</p>
 </footer>
 
 <style>
@@ -128,28 +131,24 @@
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
   }
 
-  .server-status-widget {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    background-color: rgba(50, 50, 50, 0.8);
-    color: white;
+  .content-wrapper {
+    margin-top: 20px;
+  }
+
+  .layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    width: 250px;
-    font-size: 0.9rem;
+    box-sizing: border-box;
   }
 
-  .server-status-widget h3 {
-    margin: 0 0 10px;
-    font-size: 1.2rem;
-    color: gold;
-  }
-
-  .server-status-widget p {
-    margin: 5px 0;
+  .centered-container {
+    flex: 1 1 500px;
+    min-width: 300px;
+    max-width: 800px;
   }
 
   .server-description {
@@ -161,8 +160,7 @@
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 100%;
-    max-width: 800px;
-    margin: 40px auto;
+    margin: 0 auto;
   }
 
   .server-description p {
@@ -178,6 +176,7 @@
   .server-description ul {
     list-style-type: disc;
     padding-left: 20px;
+    text-align: left;
   }
 
   .server-description h3 {
@@ -200,6 +199,37 @@
     background-color: rgba(255, 215, 0, 0.8);
   }
 
+  .server-status-widget {
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    flex: 0 0 250px;
+    font-size: 0.9rem;
+  }
+
+  .server-status-widget h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: gold;
+  }
+
+  .server-status-widget p {
+    margin: 5px 0;
+  }
+
+  iframe {
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    flex: 0 0 350px;
+    border: none;
+  }
+
   footer {
     text-align: center;
     padding: 20px 0;
@@ -211,27 +241,22 @@
     font-size: 0.8rem;
   }
 
-  .centered-container {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    min-height: calc(100vh - 200px); /* Adjust height to fit the viewport */
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 0 auto; /* Remove left margin to center content */
-  }
+  /* Mobile fixes */
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+      align-items: center;
+    }
 
-  iframe {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    width: 350px;
-    height: 500px;
-    border: none;
-    background-color: transparent;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    .server-status-widget,
+    iframe,
+    .centered-container {
+      width: 90%;
+      max-width: 400px;
+    }
+
+    iframe {
+      height: 400px;
+    }
   }
 </style>
