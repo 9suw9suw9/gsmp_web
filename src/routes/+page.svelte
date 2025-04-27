@@ -129,11 +129,6 @@
     font-weight: 900;
     color: gold;
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
-    transition: transform 0.3s ease;
-  }
-
-  .title:hover {
-    transform: scale(1.05);
   }
 
   .content-wrapper {
