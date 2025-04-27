@@ -56,10 +56,10 @@
       <p>Itt nem csak blokkokat ásol, hanem barátságokat is. Meg néha gödröt a spawn közepére – de az adminok már megszokták.</p>
       <h2>Mi vár rád nálunk❓</h2>
       <ul>
-        <li>• Egyedi élmények (vagy legalábbis mi annak hívjuk)</li>
-        <li>• Egy staff csapat, akik több kávét isznak mint te XP-t farmolsz</li>
-        <li>• Eventek, amik néha működnek is!</li>
-        <li>• És egy közösség, ahol még senki se kapott bann-t a rossz poénjai miatt. Még.</li>
+        <li> Egyedi élmények (vagy legalábbis mi annak hívjuk)</li>
+        <li> Egy staff csapat, akik több kávét isznak mint te XP-t farmolsz</li>
+        <li> Eventek, amik néha működnek is!</li>
+        <li> És egy közösség, ahol még senki se kapott bann-t a rossz poénjai miatt. Még.</li>
       </ul>
       <p>👉 Csinálj magadnak egy házat. Vagy egy sárkunyhót. Vagy csak gyere fel, és mondd azt a chatbe, hogy “ez a szerver jobb mint a múltkori”. Mert tényleg az.</p>
       <h3>Csatlakozz most:</h3>
