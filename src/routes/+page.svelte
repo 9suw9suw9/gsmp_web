@@ -40,7 +40,7 @@
 <div class="content-wrapper">
   <main class="layout">
 
-    <!-- Left: Minecraft server status -->
+    <!-- left - mc server status -->
     <div class="server-status-widget">
       <h3>Státusz</h3>
       <p><strong>MOTD:</strong> {serverStatus.name}</p>
@@ -49,7 +49,7 @@
       <p><strong>Játékosok:</strong> {serverStatus.players} / {serverStatus.maxPlayers}</p>
     </div>
 
-    <!-- Center: Main content -->
+    <!-- cent. - main content -->
     <div class="centered-container">
       <div class="server-description">
         <p class="intro">😀 Szeretnél egy Minecraft szervert, ami nem egy újabb “survival de van /kit start” élmény? Hát... mi is. Ezért csináltuk meg a GoldSMP-t.</p>
@@ -67,7 +67,7 @@
       </div>
     </div>
 
-    <!-- Right: Discord widget -->
+    <!-- right - dc widget -->
     <!-- svelte-ignore a11y_missing_attribute -->
     <iframe
       src="https://discord.com/widget?id=1325013343463018548&theme=dark"
@@ -241,7 +241,7 @@
     font-size: 0.8rem;
   }
 
-  /* Mobile fixes */
+  /* mobile fix */
   @media (max-width: 768px) {
     .layout {
       flex-direction: column;
