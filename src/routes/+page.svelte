@@ -149,8 +149,12 @@
     flex: 1 1 500px;
     min-width: 300px;
     max-width: 800px;
+    transition: transform 0.3s ease;
   }
 
+  .centered-container:hover {
+    transform: scale(1.02);
+  }
   .server-description {
     background-color: rgba(50, 50, 50, 0.8);
     backdrop-filter: blur(10px);
@@ -208,6 +212,11 @@
     width: 250px;
     flex: 0 0 250px;
     font-size: 0.9rem;
+    transition: transform 0.3s ease;
+  }
+
+  .server-status-widget:hover {
+    transform: scale(1.02);
   }
 
   .server-status-widget h3 {
@@ -228,6 +237,11 @@
     height: 500px;
     flex: 0 0 350px;
     border: none;
+    transition: transform 0.3s ease;
+  }
+
+  iframe:hover {
+    transform: scale(1.02);
   }
 
   footer {
